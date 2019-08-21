@@ -4,7 +4,7 @@ export default function core () {
 		visitor: {
 			VariableDeclaration(path) {
 				if (path.node.kind === 'const') {
-					path.node.kind = 'var'
+					path.node.kind = 'var';
 					// let node = types.VariableDeclaration('var', path.node.declarations)
 					// path.replaceWith(node);
 				}
